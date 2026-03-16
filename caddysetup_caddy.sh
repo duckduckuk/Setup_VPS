@@ -19,7 +19,7 @@ if [ ! -f "$CONF_DIR/Caddyfile" ]; then
     echo "Creating default Caddyfile..."
     cat <<EOF > "$CONF_DIR/Caddyfile"
 :80 {
-    respond "Caddy is running! Your config is in host/caddy_config/Caddyfile"
+    respond "Gridlogic Test OK"
 }
 EOF
 fi
