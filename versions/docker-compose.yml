@@ -1,0 +1,14 @@
+@@@ create caddyfile in caddyconfig @@@                                                                           
+services:
+  caddy:
+    image: caddy:latest
+    container_name: caddy
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./caddy_config:/etc/caddy
+      - caddy_data:/data
+
+volumes:
+  caddy_data:
+
